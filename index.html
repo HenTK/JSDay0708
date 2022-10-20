@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- mycss -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Homework JS Day 15</h1>
+    </header>
+    <section class="Homework py-5">
+        <div class="Homework-container">
+            <div class="Homework-bg">
+                <div class="Homework-content">
+                    <div class="Homework-content-left">
+                        <div class="homework-left-flex">
+                            <div class="Homework-item active">
+                                <a href="">
+                                    <i class="fa-solid fa-book"></i>
+                                    <span>Bài 1</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Homework-content-right py-5">
+
+
+                        <span>BÀI TẬP MẢNG</span>
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <div class="btncss">
+                            <input id="arri" class="number" type="number" name="name" placeholder=" Nhập vào số">
+                            <button onclick="Ex00()" type="button" class="">THÊM VÀO MẢNG</button>
+                        </div>
+
+                        <div>
+                            <input id="arr" class="array" type="text" name="name" placeholder=" Các phần tử của mảng">
+                        </div>
+
+
+                        <div class="calc-item question">
+                            <div class="calc-title">
+                                <span class="title">Tính tống các số dương trong mảng</span>
+                                <button class="calcbtn question-btn">
+                                    <span class="plus-icon">
+                                        <i class="calc-show fa-solid fa-caret-down"></i>
+                                    </span>
+                                    <span class="minus-icon">
+                                        <i class="calc-hide fa-solid fa-caret-up"></i>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="itemdropdown btncss question-text">
+                                <input id="numOutEx01" class="Salary" type="text" name="name"
+                                    placeholder=" Tra cứu kết quả">
+                                <button onclick="Ex01()" type="button" class="student">
+                                    KẾT QUẢ
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="calc-item question">
+                            <div class="calc-title">
+                                <span class="title">Đếm số dương trong mảng</span>
+                                <button class="calcbtn question-btn">
+                                    <span class="plus-icon">
+                                        <i class="calc-show fa-solid fa-caret-down"></i>
+                                    </span>
+                                    <span class="minus-icon">
+                                        <i class="calc-hide fa-solid fa-caret-up"></i>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="itemdropdown btncss question-text">
+                                <input id="numOutEx02" class="Salary" type="text" name="name"
+                                    placeholder=" Tra cứu kết quả">
+                                <button onclick="Ex02()" type="button" class="student">
+                                    KẾT QUẢ
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="calc-item question">
+                            <div class="calc-title">
+                                <span class="title">Tìm số nhỏ nhất trong mảng</span>
+                                <button class="calcbtn question-btn">
+                                    <span class="plus-icon">
+                                        <i class="calc-show fa-solid fa-caret-down"></i>
+                                    </span>
+                                    <span class="minus-icon">
+                                        <i class="calc-hide fa-solid fa-caret-up"></i>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="itemdropdown btncss question-text">
+                                <input id="numOutEx03" class="Salary" type="text" name="name"
+                                    placeholder=" Tra cứu kết quả">
+                                <button onclick="Ex03()" type="button" class="student">
+                                    KẾT QUẢ
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="calc-item question">
+                            <div class="calc-title">
+                                <span class="title">Tính số dương nhỏ nhất trong mảng</span>
+                                <button class="calcbtn question-btn">
+                                    <span class="plus-icon">
+                                        <i class="calc-show fa-solid fa-caret-down"></i>
+                                    </span>
+                                    <span class="minus-icon">
+                                        <i class="calc-hide fa-solid fa-caret-up"></i>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="itemdropdown btncss question-text">
+                                <input id="numOutEx04" class="Salary" type="text" name="name"
+                                    placeholder=" Tra cứu kết quả">
+                                <button onclick="Ex04()" type="button" class="student">
+                                    KẾT QUẢ
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="calc-item question">
+                            <div class="calc-title">
+                                <span class="title">Tìm số chẵn cuối cùng trong mảng</span>
+                                <button class="calcbtn question-btn">
+                                    <span class="plus-icon">
+                                        <i class="calc-show fa-solid fa-caret-down"></i>
+                                    </span>
+                                    <span class="minus-icon">
+                                        <i class="calc-hide fa-solid fa-caret-up"></i>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="itemdropdown btncss question-text">
+                                <input id="numOutEx05" class="Salary" type="text" name="name"
+                                    placeholder=" Tra cứu kết quả">
+                                <button onclick="Ex05()" type="button" class="student">
+                                    KẾT QUẢ
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="calc-item question">
+                            <div class="calc-title">
+                                <span class="title">Đổi chỗ hai số trong mảng</span>
+                                <button class="calcbtn question-btn">
+                                    <span class="plus-icon">
+                                        <i class="calc-show fa-solid fa-caret-down"></i>
+                                    </span>
+                                    <span class="minus-icon">
+                                        <i class="calc-hide fa-solid fa-caret-up"></i>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="itemdropdown btncss question-text">
+                                <div>
+                                    <input id="numPos1" class="Salary" type="num" name="name"
+                                        placeholder=" Nhập vào vị trí số thứ nhất">
+                                    <input id="numPos2" class="Salary" type="num" name="name"
+                                        placeholder=" Nhập vào vị trí số thứ hai">
+                                </div>
+                                <input id="numOutEx06" class="Salary" type="text" name="name"
+                                    placeholder=" Tra cứu kết quả">
+                                <button onclick="Ex06()" type="button" class="student">
+                                    KẾT QUẢ
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="calc-item question">
+                            <div class="calc-title">
+                                <span class="title">Sắp xếp tăng dần các số trong mảng</span>
+                                <button class="calcbtn question-btn">
+                                    <span class="plus-icon">
+                                        <i class="calc-show fa-solid fa-caret-down"></i>
+                                    </span>
+                                    <span class="minus-icon">
+                                        <i class="calc-hide fa-solid fa-caret-up"></i>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="itemdropdown btncss question-text">
+                                <input id="numOutEx07" class="Salary" type="text" name="name"
+                                    placeholder=" Tra cứu kết quả">
+                                <button onclick="Ex07()" type="button" class="student">
+                                    KẾT QUẢ
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="calc-item question">
+                            <div class="calc-title">
+                                <span class="title">Tìm số nguyên tố đầu tiên trong mảng</span>
+                                <button class="calcbtn question-btn">
+                                    <span class="plus-icon">
+                                        <i class="calc-show fa-solid fa-caret-down"></i>
+                                    </span>
+                                    <span class="minus-icon">
+                                        <i class="calc-hide fa-solid fa-caret-up"></i>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="itemdropdown btncss question-text">
+                                <input id="numOutEx08" class="Salary" type="text" name="name"
+                                    placeholder=" Tra cứu kết quả">
+                                <button onclick="Ex08()" type="button" class="student">
+                                    KẾT QUẢ
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="calc-item question">
+                            <div class="calc-title">
+                                <span class="title">Đếm số nguyên trong trong mảng</span>
+                                <button class="calcbtn question-btn">
+                                    <span class="plus-icon">
+                                        <i class="calc-show fa-solid fa-caret-down"></i>
+                                    </span>
+                                    <span class="minus-icon">
+                                        <i class="calc-hide fa-solid fa-caret-up"></i>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="itemdropdown btncss question-text">
+                                <input id="numInEx09" class="Salary" type="text" name="name"
+                                    placeholder=" Nhập vào mảng số thực">
+                                <br>
+                                <input id="numOutEx09" class="Salary" type="text" name="name"
+                                    placeholder=" Tra cứu kết quả">
+                                <button onclick="Ex09()" type="button" class="student">
+                                    KẾT QUẢ
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="calc-item question">
+                            <div class="calc-title">
+                                <span class="title">So sánh số lượng số âm và số dương trong mảng</span>
+                                <button class="calcbtn question-btn">
+                                    <span class="plus-icon">
+                                        <i class="calc-show fa-solid fa-caret-down"></i>
+                                    </span>
+                                    <span class="minus-icon">
+                                        <i class="calc-hide fa-solid fa-caret-up"></i>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="itemdropdown btncss question-text">
+                                <input id="numOutEx10" class="Salary" type="text" name="name"
+                                    placeholder=" Tra cứu kết quả">
+                                <button onclick="Ex10()" type="button" class="student">
+                                    KẾT QUẢ
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h1>Homework JS Day 15</h1>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
